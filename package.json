@@ -1,0 +1,38 @@
+{
+  "name": "calculadora-web",
+  "version": "1.0.0",
+  "description": "calculadora web",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/helenharumi/calculadora-web.git"
+  },
+  "keywords": [
+    "javascript"
+  ],
+  "author": "Helen Harumi Adachi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/helenharumi/calculadora-web/issues"
+  },
+  "homepage": "https://github.com/helenharumi/calculadora-web#readme",
+  "dependencies": {
+    "angular": "^1.8.2",
+    "angular-animate": "^1.8.2",
+    "angular-aria": "^1.8.2",
+    "angular-material": "^1.2.2",
+    "angular-messages": "^1.8.2",
+    "angular-route": "^1.8.2"
+  },
+  "devDependencies": {
+    "live-server": "^1.2.1",
+    "cpx": "^1.5.0"
+  },
+  "scripts": {
+    "serve": "live-server ./app",
+    "start": "npm run serve",
+    "postinstall": "npm run copy-libs",
+    "copy-libs": "cpx \"node_modules/{angular,angular-*,jquery/dist}/**/*\" app/lib -C",
+    "postupdate-deps": "npm run copy-libs"
+  }
+}
