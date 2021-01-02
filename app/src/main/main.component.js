@@ -1,5 +1,7 @@
 'use strict';
-angular.module('main').component('sh-main', {
-    templateUrl: 'main/main.template.html',
-    controller: function (){}
-});
+angular
+    .module('calculadoraApp')
+    .component('main', {
+        templateUrl: "/src/main/main.template.html",
+        controller: function () { }
+    });

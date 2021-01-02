@@ -1,19 +1,17 @@
 <section layout="row" flex="">
 
-    <md-sidenav class="md-sidenav-left" md-component-id="left" md-is-locked-open="$mdMedia('gt-md')"
-        md-whiteframe="4">
-
-
-        <md-content layout-padding="" ng-controller="LeftCtrl">
-            <md-list>
-                <md-list-item>
-                    <md-button ng-click="$ctrl.showDetails({user:user})"
-                        ng-class="{'selected' : user === $ctrl.selected }">
-                        <h3>Calculadora IMC</h3>>
-                    </md-button>
-                </md-list-item>
-            </md-list>
-        </md-content>
+    <md-sidenav class="md-sidenav-left" md-component-id="left" md-is-locked-open="$mdMedia('gt-md')" md-whiteframe="4">
 
     </md-sidenav>
+    <md-content layout-padding="">
+        <md-list>
+            <md-list-item>
+                <md-button ng-click="$ctrl.showDetails({user:user})" ng-class="{'selected' : user === $ctrl.selected }">
+                    <h3>Calculadora IMC</h3>
+                </md-button>
+            </md-list-item>
+        </md-list>
+    </md-content>
+
+
 </section>

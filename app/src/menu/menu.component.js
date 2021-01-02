@@ -1,8 +1,10 @@
 'use strict';
-angular.module('menu').component('menu', {
-    templateUrl: 'menu/menu.template.html',
-    controller: ['Menu', function menuController(){}]
-});
+angular
+    .module('calculadoraApp')
+    .component('menu', {
+        templateUrl: '/src/menu/menu.template.html',
+        controller: function () { }
+    });
 
 
 // .controller('LeftCtrl', function ($scope, $timeout, $mdSidenav, $log) {
