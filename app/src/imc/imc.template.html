@@ -1,2 +1,30 @@
-<h1>Calculadora de IMC</h1>
-<slider></slider>
+<h1>Calculadora IMC (Índice de Massa Corporal)</h1>
+<section class="calculadora">
+    <form>
+        <md-content layout="column">
+            <md-input-container class="md-block">
+            <label for="nome" class="form__titulo">Informe seu nome</label>
+            <input type="text" id="nome" name="nome" ng-model="nome">
+        </md-input-container>
+
+        <md-input-container class="md-block">
+            <label for="altura" class="form__titulo">Informe sua altura</label>
+            <input type="text" id="altura" name="altura" ng-model="altura">
+        </md-input-container>
+
+        <md-input-container class="md-block">
+            <label for="peso" class="form__titulo">Informe seu peso</label>
+            <input type="text" id="peso" name="peso" ng-model="peso">
+        </md-input-container>
+    </md-content>
+    </form>
+    
+    <md-button class="md-raised md-primary" ng-click="calculaImc()">Calcular</md-button>
+    <md-button class="md-raised md-accent" ng-click="limpar()">Limpar</md-button>
+
+</section>
+
+<section>
+    <small class="texto_resultado" ng-hide="exibir">Seu Resultado: {{resultado}}</small>
+    <small class="calc_resultado">{{resultadoImc}}</small>
+</section>
