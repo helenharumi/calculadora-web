@@ -7,6 +7,9 @@ angular
                 when('/index', {
                     template: '<main><main/>'
                 }).
+                when('/imc', {
+                    template: '<imc><imc/>'
+                }).
                 otherwise('/index');
         }
     ]);

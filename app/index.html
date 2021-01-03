@@ -17,10 +17,22 @@
     <script src="src/main/main.component.js"></script>
     <script src="src/header/header.component.js"></script>
     <script src="src/menu/menu.component.js"></script>
+    <script src="src/imc/imc.component.js"></script>
 </head>
 
-<body>
-    <div ng-view></div>
+<body layout="column">
+    <header></header>
+
+    <div flex layout="row">
+
+        <sh-menu></sh-menu>
+
+        <md-content flex id="content">
+            <div ng-view></div>
+        </md-content>
+
+    </div>
+
 </body>
 
 </html>

@@ -1,7 +1,7 @@
 'use strict';
 angular
     .module('calculadoraApp')
-    .component('menu', {
+    .component('shMenu', {
         templateUrl: '/src/menu/menu.template.html',
         controller: function () { }
     });
