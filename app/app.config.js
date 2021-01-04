@@ -10,8 +10,8 @@ angular
                 when('/imc', {
                     template: '<imc><imc/>'
                 }).
-                when('/ipca', {
-                    template: '<ipca><ipca/>'
+                when('/reajustealuguel', {
+                    template: '<reajustealuguel><reajustealuguel/>'
                 }).
                 otherwise('/index');
         }
